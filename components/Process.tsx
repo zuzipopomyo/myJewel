@@ -1,3 +1,5 @@
+import ring from '@/public/Frame 2697.png'
+import Image from 'next/image'
 export default function Process() {
   const steps = [
     {
@@ -33,24 +35,24 @@ export default function Process() {
   ]
 
   return (
+      <>
+      <h3 className='my-5 mx-auto'>Home / Custom Jewelry</h3>
     <section className="py-20 bg-white">
+           
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
             <h2 className="text-4xl font-light text-gray-900 mb-6">Custom Jewelry</h2>
             <p className="text-gray-600 mb-8">Create Your Masterpiece: Bespoke Jewelry Crafted for You</p>
 
-            <div className="grid grid-cols-2 gap-4">
-              <img
-                src="/placeholder.svg?height=300&width=250&text=Ring+Process"
-                alt="Jewelry Process"
-                className="w-full h-48 object-cover rounded-lg"
-              />
-              <img
-                src="/placeholder.svg?height=300&width=250&text=Diamond+Setting"
-                alt="Diamond Setting"
-                className="w-full h-48 object-cover rounded-lg"
-              />
+            <div className="grid grid-cols-2 gap-4 w-full h-full">
+             <Image
+             src={ring}
+             alt=''
+             width={600}
+             height={600}
+             />
             </div>
           </div>
 
@@ -61,8 +63,8 @@ export default function Process() {
 
             <div className="space-y-6">
               {steps.map((step, index) => (
-                <div key={index} className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-medium">
+                <div key={index} className="flex items-start space-x-4 border-b pb-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium">
                     {step.number}
                   </div>
                   <div>
@@ -76,5 +78,6 @@ export default function Process() {
         </div>
       </div>
     </section>
+      </>
   )
 }

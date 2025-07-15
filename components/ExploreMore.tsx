@@ -1,3 +1,5 @@
+import photo from '@/public/Frame 1578.png'
+import Image from 'next/image'
 export default function ExploreMore() {
   const links = [
     { text: "How to Select the Right Wedding Ring", number: "01" },
@@ -13,8 +15,7 @@ export default function ExploreMore() {
           <div>
             <h2 className="text-4xl font-light text-gray-900 mb-6">Explore More</h2>
             <p className="text-gray-600 mb-8">
-              Discover everything you need to know about jewelry, from selecting the perfect piece to caring for your
-              treasures.
+              Looking for more diamond guides, buying tips or details about the 4Cs? Explore more of our diamond education pages:
             </p>
 
             <div className="space-y-4">
@@ -33,10 +34,12 @@ export default function ExploreMore() {
           </div>
 
           <div>
-            <img
-              src="/placeholder.svg?height=500&width=400&text=Jewelry+Model"
-              alt="Jewelry Model"
-              className="w-full h-96 object-cover rounded-lg"
+            <Image
+            src={photo}
+            alt=''
+            width={500}
+            height={500}
+
             />
           </div>
         </div>

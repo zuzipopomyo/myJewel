@@ -10,7 +10,7 @@ export default function Header() {
     <header className="bg-white  border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top announcement bar */}
-        <div className="text-black text-center py-2 text-sm border-b border-t">
+        <div className="text-black text-center py-2 text-sm border-b border-">
           <p>Exclusive Collection Launch: Discover Timeless Elegance Today</p>
         </div>
 
