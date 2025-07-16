@@ -1,15 +1,18 @@
-import type { Config } from "tailwindcss";
+import { fontFamily } from 'tailwindcss/defaultTheme'
 
-const config: Config = {
+export default {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    // Add other paths as needed
+    './app/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        playfair: ['"Playfair Display"', ...fontFamily.serif],
+        dmsans: ['"DM Sans"', ...fontFamily.sans],
+        savate: ['Savate', ...fontFamily.sans],
+      },
+    },
   },
   plugins: [],
-};
-
-export default config;
+}
