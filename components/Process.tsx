@@ -1,4 +1,3 @@
-// import ring from '@/public/Frame 2697.png'
 import Image from "next/image";
 import ringWithDiamond from "@/public/Frame 2689 (1).png";
 import diamondsRign from "@/public/Frame 2696.png";

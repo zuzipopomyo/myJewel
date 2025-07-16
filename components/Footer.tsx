@@ -61,23 +61,18 @@ export default function Footer() {
             <div className="mt-6">
               <p className="mb-2">Payment Methods</p>
               <div className="flex space-x-4">
-                {/* Visa */}
                    <div className="w-10 h-6 rounded flex items-center justify-center">
                   <Image src='/visa.svg' alt="" width={100} height={16}/>
                 </div>
-                {/* Visa */}
                    <div className="w-10 h-6 rounded flex items-center justify-center">
                   <Image src='/master.svg' alt="" width={100} height={16}/>
                 </div>
-                {/* Amex */}
                 <div className="w-10 h-6  rounded flex items-center justify-center">
                   <Image src='/amex.svg' alt="" width={100} height={16}/>
                 </div>
-                {/* PayPal */}
                 <div className="w-10 h-6 rounded flex items-center justify-center">
                   <Image src='/applePay.svg' alt="" width={100} height={16}/>
                 </div>
-                {/* Apple Pay */}
                 <div className="w-10 h-6 rounded flex items-center justify-center">
                   <Image src='/teddy.svg' alt="" width={100} height={16}/>
                 </div>

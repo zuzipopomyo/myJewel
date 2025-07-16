@@ -76,7 +76,6 @@ export default function Testimonials() {
   );
 
   useEffect(() => {
-    // Reset animationStage on every page change
     setAnimationStage([]);
     paginatedTestimonials.forEach((_, i) => {
       setTimeout(() => {
